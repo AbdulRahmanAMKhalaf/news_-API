@@ -15,7 +15,7 @@ void main() async{
   DioHelper.initialDioHelper();
   await  PreferenceHelper.initialPreference();
   Bloc.observer = MyBlocObserver();
-  ThemeMode ?theme =PreferenceHelper.getData(key: 'Theme')==true?ThemeMode.light:ThemeMode.dark;
+//  ThemeMode ?theme =PreferenceHelper.getData(key: 'Theme')==true?ThemeMode.light:ThemeMode.dark;
   runApp(const MyApp());
 }
 
